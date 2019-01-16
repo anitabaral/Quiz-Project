@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminpage.QuestionDetailsController">
+   <children>
+      <Label layoutX="527.0" layoutY="63.0" text="QUESTION DETAILS" textFill="#050d54">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblQuestionData" layoutX="185.0" layoutY="154.0" prefHeight="550.0" prefWidth="1073.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="70.0" text="Id" />
+          <TableColumn fx:id="colQuestion" prefWidth="341.0" text="Question" />
+            <TableColumn fx:id="colOption1" prefWidth="144.0" text="Option 1" />
+            <TableColumn fx:id="colOption2" prefWidth="124.0" text="Option 2" />
+            <TableColumn fx:id="colOption3" prefWidth="140.0" text="Option 3" />
+            <TableColumn fx:id="colOption4" prefWidth="121.0" text="Option 4" />
+            <TableColumn fx:id="colAnswer" prefWidth="132.0" text="Answer" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

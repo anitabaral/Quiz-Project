@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizmanagement.QuizWindowController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1366.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/image7.jpg" />
+         </image></ImageView>
+      <Label fx:id="lblQuestion" layoutX="121.0" layoutY="125.0" text="Samle Question" textFill="#e1dede">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <VBox layoutX="121.0" layoutY="232.0" prefHeight="200.0" prefWidth="357.0">
+         <children>
+            <RadioButton fx:id="rdOpt1" mnemonicParsing="false" text="Option 1" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rdOpt2" mnemonicParsing="false" text="Option 2" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rdOpt3" mnemonicParsing="false" text="Option 3" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rdOpt4" mnemonicParsing="false" text="Option 4" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </RadioButton>
+         </children>
+      </VBox>
+      <HBox layoutX="121.0" layoutY="503.0" prefHeight="50.0" prefWidth="418.0">
+         <children>
+            <Button fx:id="btnLoad" mnemonicParsing="false" onAction="#hanldeLoadButtonAction" prefHeight="35.0" prefWidth="108.0" text="Load">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSubmit" mnemonicParsing="false" onAction="#hanldeSubmitButtonAction" prefHeight="38.0" prefWidth="103.0" text="submit">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="lblSTatus" layoutX="121.0" layoutY="553.0" prefHeight="58.0" prefWidth="698.0" text="Status" textFill="#298a4b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
